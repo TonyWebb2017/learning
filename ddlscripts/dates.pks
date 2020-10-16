@@ -111,6 +111,11 @@ IS
                         p_int_type IN VARCHAR2 DEFAULT 'MO'
                        )
    RETURN BOOLEAN;
+   
+   FUNCTION gibby (p_date IN DATE,
+                        p_int_type IN VARCHAR2 DEFAULT 'MO'
+                       )
+   RETURN BOOLEAN;
 
 END dates;
 /
