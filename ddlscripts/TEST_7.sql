@@ -8,3 +8,7 @@ UPDATE MRAEU.CORE_MIGRATION_DATA c
    AND gender = 'U';
    
 COMMIT;
+
+--learn-1
+ROLLBACK;
+
