@@ -6,6 +6,13 @@ UPDATE MRAEU.CORE_MIGRATION_DATA c
        gender = NULL
  WHERE gender is NOT NULL
    AND gender = 'U';
+
+UPDATE MRAEU.CORE_MIGRATION_DATA c
+   SET processed_flag = 'Y',
+       log_desc = NULL,
+       gender = NULL
+ WHERE gender is NOT NULL
+   AND gender = 'U';
    
 COMMIT;
 
